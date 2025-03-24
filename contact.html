@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ran Tranz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/chat-widget.css">
+    <link rel="stylesheet" href="css/chat-widget-enhanced.css">
+    <link rel="stylesheet" href="css/contact-enhanced.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Ran Tranz Logo" width="240" height="80">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a>
+                        <ul class="submenu">
+                            <li><a href="dealer-services.html">Dealer Services</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
+                            <li><a href="car-rentals.html">Car Rentals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help with all your procurement and shipping needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>Chicago, Illinois, USA</p>
+                    <p>123 Logistics Avenue, Suite 200</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Number</h3>
+                    <p>Main: (123) 456-7890</p>
+                    <p>Support: (123) 456-7891</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>info@rantranz.com</p>
+                    <p>support@rantranz.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service">
+                            <option value="">Select a Service</option>
+                            <option value="dealer">Dealer Services</option>
+                            <option value="shipping">Shipping Services</option>
+                            <option value="rental">Car Rentals</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="service">Service Interested In</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="emergency-contact">
+                <h3>Emergency Contact</h3>
+                <p>For urgent inquiries requiring immediate assistance, please use our emergency contact options below:</p>
+                <a href="tel:+11234567899" class="emergency-number">
+                    <i class="fas fa-phone-alt"></i>
+                    (123) 456-7899
+                </a>
+                <div class="response-time">
+                    <div class="response-time-item">
+                        <span>Phone</span>
+                        <strong>Immediate</strong>
+                    </div>
+                    <div class="response-time-item">
+                        <span>Chat</span>
+                        <strong>< 5 min</strong>
+                    </div>
+                    <div class="response-time-item">
+                        <span>Email</span>
+                        <strong>< 1 hour</strong>
+                    </div>
+                </div>
+                <button id="urgent-chat-btn" class="urgent-chat-btn">
+                    <i class="fas fa-comment-dots"></i> Start Urgent Chat
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <!-- Map would be embedded here -->
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Click to view our location on the map</p>
+                    <p><strong>123 Logistics Avenue, Chicago, IL</strong></p>
+                </div>
+            </div>
+            <div class="location-details">
+                <div class="location-card">
+                    <h3><i class="fas fa-directions"></i> Directions</h3>
+                    <p>Located in downtown Chicago, our office is easily accessible by public transportation and has ample parking.</p>
+                    <a href="https://maps.google.com/?q=Chicago,Illinois" target="_blank" class="btn btn-outline">Get Directions</a>
+                </div>
+                <div class="location-card">
+                    <h3><i class="fas fa-phone-alt"></i> Call Us</h3>
+                    <p>Our customer service team is available during business hours to assist you.</p>
+                    <a href="tel:+11234567890" class="btn btn-primary">Call Now: (123) 456-7890</a>
+                </div>
+                <div class="location-card">
+                    <h3><i class="fas fa-building"></i> Visit Our Office</h3>
+                    <p>Schedule an in-person consultation with our team of experts.</p>
+                    <a href="#" class="btn btn-outline" id="schedule-visit-btn">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Follow us on social media for the latest updates, promotions, and industry news.</p>
+        </div>
+    </section>
+    
+    <!-- Schedule Visit Modal -->
+    <div class="modal" id="schedule-visit-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-calendar-check"></i> Schedule a Visit</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="schedule-form" id="schedule-form">
+                    <div class="form-group">
+                        <input type="text" id="visit-name" name="visit-name" placeholder=" " required>
+                        <label for="visit-name">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="visit-email" name="visit-email" placeholder=" " required>
+                        <label for="visit-email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="visit-phone" name="visit-phone" placeholder=" " required>
+                        <label for="visit-phone">Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="visit-date" name="visit-date" required>
+                        <label for="visit-date" class="date-label">Preferred Date</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="visit-time" name="visit-time" required>
+                            <option value="">Select a Time</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                        </select>
+                        <label for="visit-time">Preferred Time</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="visit-notes" name="visit-notes" rows="3" placeholder=" "></textarea>
+                        <label for="visit-notes">Additional Notes</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Schedule Visit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-search">
+                <input type="text" placeholder="Search frequently asked questions..." id="faq-search-input">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="faq-categories">
+                <div class="faq-category active" data-category="all">All</div>
+                <div class="faq-category" data-category="shipping">Shipping</div>
+                <div class="faq-category" data-category="dealer">Dealer Services</div>
+                <div class="faq-category" data-category="rental">Car Rentals</div>
+                <div class="faq-category" data-category="other">Other</div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>What areas do you provide shipping services to?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide shipping services both locally within the United States and internationally, with specialized expertise in shipping to West Africa.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>How can I track my shipment?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your shipment is processed, you will receive a tracking number via email that you can use to monitor your shipment's progress through our online tracking system.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="dealer">
+                    <div class="faq-question">
+                        <h3>What types of vehicles do you offer through your dealer services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Through our dealer services, we can help you locate and purchase a wide range of vehicles, including luxury cars, SUVs, trucks, and economy models, both new and pre-owned.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>How much does international shipping cost?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>International shipping costs vary based on destination, size, weight, and shipping method. Contact us for a personalized quote based on your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="rental">
+                    <div class="faq-question">
+                        <h3>What documents do I need to rent a car?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll need a valid driver's license, a major credit card, and proof of insurance. International customers may need an International Driving Permit depending on their country of origin.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, bank transfers, and PayPal. For international transactions, we also work with secure wire transfer services.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="dealer">
+                    <div class="faq-question">
+                        <h3>Do you offer financing options for vehicle purchases?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we work with several financial institutions to provide competitive financing options for both domestic and international clients. Contact our dealer services team for more information.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="rental">
+                    <div class="faq-question">
+                        <h3>Can I extend my rental period after I've already rented the vehicle?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, rental extensions are possible subject to vehicle availability. Please contact our rental department at least 24 hours before your scheduled return to arrange an extension.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ran Tranz</h3>
+                    <p>Specializing in promoting trade through imports and exports with tailored logistics solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="dealer-services.html">Dealer Services</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="car-rentals.html">Car Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Chicago, Illinois, USA</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@rantranz.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ran Tranz. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span>Chat with Us</span>
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact-enhanced.js"></script>
+</body>
+</html>

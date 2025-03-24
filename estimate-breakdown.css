@@ -1,0 +1,59 @@
+/* Estimate Breakdown Styles */
+
+.estimate-breakdown {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+}
+
+.estimate-breakdown h4 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.estimate-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.estimate-row:last-child {
+    border-bottom: none;
+}
+
+.estimate-row.total {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #eee;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.estimate-note {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.request-quote {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.request-quote:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

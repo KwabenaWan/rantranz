@@ -1,0 +1,85 @@
+/* Animations CSS */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Button Hover Animation */
+@keyframes buttonHover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
+
+/* Gradient Animation */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Apply animations to elements */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 0.8s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Interactive element animations */
+.btn:hover {
+    animation: buttonHover 0.3s ease-in-out;
+}
+
+.service-card:hover .service-icon {
+    animation: pulse 1s infinite;
+}
+
+/* Hero section animations */
+.hero-slide {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content h2 {
+    animation: slideUp 1s ease-out;
+}
+
+.hero-content p {
+    animation: slideUp 1s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+.cta-buttons {
+    animation: slideUp 1s ease-out 0.6s;
+    animation-fill-mode: both;
+}

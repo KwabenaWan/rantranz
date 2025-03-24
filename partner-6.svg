@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="80" viewBox="0 0 150 80">
+  <rect width="150" height="80" fill="#ffffff"/>
+  <text x="75" y="45" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333333">Partner 6</text>
+  <path d="M40,40 L60,25 L80,40 L100,25 L110,40" fill="none" stroke="#dc3545" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40,50 L60,35 L80,50 L100,35 L110,50" fill="none" stroke="#dc3545" stroke-width="2" stroke-linecap="round"/>
+</svg>

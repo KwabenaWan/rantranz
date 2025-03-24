@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="80" viewBox="0 0 150 80">
+  <rect width="150" height="80" fill="#ffffff"/>
+  <text x="75" y="45" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333333">Partner 4</text>
+  <rect x="40" y="25" width="70" height="30" fill="none" stroke="#6c757d" stroke-width="2" rx="15" ry="15"/>
+</svg>

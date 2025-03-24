@@ -1,0 +1,197 @@
+/* Awards Preview Section Styles */
+
+.awards-showcase-section {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.awards-showcase-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M20 5 L35 20 L20 35 L5 20 Z" stroke="%23f8f9fa" fill="none" stroke-width="1"/></svg>');
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.awards-preview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.awards-preview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05) 0%, rgba(var(--secondary-rgb), 0.05) 100%);
+    z-index: -1;
+}
+
+.awards-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.awards-preview-content {
+    flex: 1 1 60%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.awards-preview-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.2);
+    transition: all 0.3s ease;
+}
+
+.awards-preview:hover .awards-preview-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.awards-preview-text {
+    flex: 1;
+}
+
+.awards-preview-text h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-size: 1.8rem;
+}
+
+.awards-preview-text p {
+    color: var(--gray-color);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.awards-preview-badges {
+    flex: 1 1 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.award-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--primary-rgb), 0.1);
+}
+
+.award-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.award-badge i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.award-badge span {
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+/* Button styles */
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary i {
+    transition: transform 0.3s ease;
+}
+
+.btn-secondary:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .awards-preview {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .awards-preview-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .awards-preview-badges {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .award-badge {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .awards-preview {
+        padding: 30px 20px;
+    }
+    
+    .awards-preview-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+}

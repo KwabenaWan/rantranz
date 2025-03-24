@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Ran Tranz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/chat-widget.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/services-enhanced.css">
+    <link rel="stylesheet" href="css/services-interactive.css">
+    <link rel="stylesheet" href="css/estimate-breakdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Image preload -->
+    <link rel="preload" as="image" href="images/banner-logistics.webp" type="image/webp">
+    <link rel="preload" as="image" href="images/dealer-services.webp" type="image/webp">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Ran Tranz Logo" width="240" height="80">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a>
+                        <ul class="submenu">
+                            <li><a href="dealer-services.html">Dealer Services</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
+                            <li><a href="car-rentals.html">Car Rentals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <!-- For banner image -->
+            <picture>
+                <source srcset="images/banner-logistics.webp" type="image/webp">
+                <source srcset="images/banner-logistics.jpg" type="image/jpeg">
+                <img src="images/banner-logistics.jpg" alt="Ran Tranz Logistics Operations" class="banner-image">
+            </picture>
+
+            <!-- For service images -->
+            <picture>
+                <source srcset="images/dealer-services.webp" type="image/webp">
+                <source srcset="images/dealer-services.jpg" type="image/jpeg">
+                <img src="images/dealer-services.jpg" alt="Luxury Vehicle Showroom" class="service-main-image">
+            </picture>
+
+            <!-- For testimonial images -->
+            <picture>
+                <source srcset="images/testimonials/profile.webp" type="image/webp">
+                <source srcset="images/testimonials/profile.jpg" type="image/jpeg">
+                <img src="images/testimonials/profile.jpg" alt="Client Name" class="testimonial-image">
+            </picture>
+            <h1>Our Services</h1>
+            <p>Comprehensive procurement and shipping solutions for all your needs</p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="service-filters">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="dealer">Dealer Services</button>
+                <button class="filter-btn" data-filter="shipping">Shipping</button>
+                <button class="filter-btn" data-filter="rental">Car Rentals</button>
+                <button class="filter-btn" data-filter="additional">Additional Services</button>
+            </div>
+            <div class="services-grid">
+                <div class="service-card large dealer">
+                    <div class="service-image">
+                        <img src="images/dealer-services.webp" alt="Luxury Vehicle Showroom" class="service-main-image">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Dealer Services</h3>
+                    <p>Our dealer services provide comprehensive assistance in locating and purchasing vehicles through our extensive network of dealership partnerships. Whether you're looking for a luxury vehicle, an economy car, or a specialized model, our team can help you find the perfect match for your needs and budget.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Access to multiple dealerships across the country</li>
+                        <li><i class="fas fa-check-circle"></i> Competitive pricing and financing options</li>
+                        <li><i class="fas fa-check-circle"></i> Thorough vehicle inspection and verification</li>
+                        <li><i class="fas fa-check-circle"></i> Assistance with paperwork and registration</li>
+                        <li><i class="fas fa-check-circle"></i> Delivery coordination to your location</li>
+                    </ul>
+                    <a href="dealer-services.html" class="btn btn-primary">Learn More</a>
+                    <div class="hover-details">
+                        <h4>Expert Vehicle Procurement</h4>
+                        <p>With access to over 500 dealerships nationwide, we can source any make or model at competitive prices, saving you time and money.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card large shipping">
+                    <div class="service-image">
+                        <img src="images/shipping-services.webp" alt="International Shipping Operations" class="service-main-image">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Shipping Services</h3>
+                    <p>Our comprehensive shipping services cater to both local and international needs, handling a wide range of items from household goods to consumer products. With our expertise in international trade, particularly between the United States and West Africa, we ensure your shipments arrive safely and on time.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Local and international shipping options</li>
+                        <li><i class="fas fa-check-circle"></i> Specialized expertise in US-West Africa trade</li>
+                        <li><i class="fas fa-check-circle"></i> Secure packaging and handling</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time tracking and updates</li>
+                        <li><i class="fas fa-check-circle"></i> Customs clearance assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Insurance coverage options</li>
+                    </ul>
+                    <a href="shipping.html" class="btn btn-primary">Learn More</a>
+                    <div class="hover-details">
+                        <h4>Why Choose Our Shipping Services?</h4>
+                        <p>With over 10 years of experience in international logistics, we offer reliable, cost-effective shipping solutions with real-time tracking and guaranteed delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card large rental">
+                    <div class="service-image">
+                        <img src="images/car-rental-fleet.webp" alt="Premium Rental Car Fleet" class="service-main-image">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Car Rentals</h3>
+                    <p>Our car rental service offers a diverse fleet of vehicles to meet your transportation needs, whether for business or pleasure. From luxury models to everyday cars, we provide reliable, well-maintained vehicles for various occasions or daily use.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Wide selection of vehicles (economy, luxury, SUVs)</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible rental periods (daily, weekly, monthly)</li>
+                        <li><i class="fas fa-check-circle"></i> Competitive rates and special packages</li>
+                        <li><i class="fas fa-check-circle"></i> Well-maintained and regularly serviced fleet</li>
+                        <li><i class="fas fa-check-circle"></i> Optional insurance coverage</li>
+                        <li><i class="fas fa-check-circle"></i> Convenient pickup and drop-off locations</li>
+                    </ul>
+                    <a href="car-rentals.html" class="btn btn-primary">Learn More</a>
+                    <div class="hover-details">
+                        <h4>Premium Rental Experience</h4>
+                        <p>Enjoy the freedom of the road with our premium rental fleet. All vehicles are less than 2 years old and come with 24/7 roadside assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Comparison Section -->
+    <section class="service-comparison">
+        <div class="container">
+            <h2 class="section-title">Service Comparison</h2>
+            <p class="section-description">Compare our services to find the perfect solution for your needs.</p>
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Dealer Services</th>
+                            <th>Shipping Services</th>
+                            <th>Car Rentals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Service Coverage</td>
+                            <td>Nationwide</td>
+                            <td>International</td>
+                            <td>Local/Regional</td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Support</td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Online Tracking</td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-times feature-unavailable"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Insurance Options</td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Financing Available</td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-times feature-unavailable"></i></td>
+                            <td><i class="fas fa-times feature-unavailable"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Customization Options</td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-check feature-available"></i></td>
+                            <td><i class="fas fa-times feature-unavailable"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Minimum Contract</td>
+                            <td>None</td>
+                            <td>None</td>
+                            <td>1 Day</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="additional-services">
+        <div class="container">
+            <h2 class="section-title">Additional Services</h2>
+            <div class="services-flex">
+                <div class="service-item additional">
+                    <div class="service-image">
+                        <img src="images/documentation.webp" alt="Documentation Services" class="service-icon-image">
+                    </div>
+                    <h3>Documentation Assistance</h3>
+                    <p>We provide comprehensive assistance with all necessary documentation for vehicle purchases, international shipping, and customs clearance.</p>
+                </div>
+                <div class="service-item additional">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Warehousing</h3>
+                    <p>Secure storage facilities for your goods before shipping or during transit, with inventory management services.</p>
+                </div>
+                <div class="service-item additional">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Business Consulting</h3>
+                    <p>Expert advice on entering US and West African markets, leveraging our extensive knowledge of international trade.</p>
+                </div>
+                <div class="service-item additional">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Inspection Services</h3>
+                    <p>Thorough inspection of vehicles and goods to ensure quality and condition before purchase or shipping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Infographic Section -->
+    <section class="infographic">
+        <div class="container">
+            <h2 class="section-title">Why Choose Ran Tranz?</h2>
+            <p class="section-description">We offer comprehensive solutions backed by expertise and dedication to excellence.</p>
+            
+            <div class="infographic-container">
+                <div class="infographic-item">
+                    <div class="infographic-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="infographic-title">Quality Assurance</h3>
+                    <p class="infographic-description">Rigorous quality control processes ensure all vehicles and goods meet the highest standards.</p>
+                </div>
+                
+                <div class="infographic-item">
+                    <div class="infographic-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="infographic-title">Time Efficiency</h3>
+                    <p class="infographic-description">Our streamlined processes save you valuable time with expedited service delivery.</p>
+                </div>
+                
+                <div class="infographic-item">
+                    <div class="infographic-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="infographic-title">Cost Savings</h3>
+                    <p class="infographic-description">Our extensive network and bulk purchasing power translate to significant cost savings for you.</p>
+                </div>
+                
+                <div class="infographic-item">
+                    <div class="infographic-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="infographic-title">Dedicated Support</h3>
+                    <p class="infographic-description">Our customer service team is available 24/7 to address your questions and concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Our Service Process</h2>
+            <p class="section-description">We follow a structured approach to ensure the highest quality of service delivery.</p>
+            
+            <div class="service-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>1. Consultation</h3>
+                        <p>We begin with a detailed consultation to understand your specific needs and requirements. Our experts will discuss your goals, timeline, and budget constraints.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2. Proposal</h3>
+                        <p>Based on your requirements, we develop a customized proposal outlining services and costs. We provide transparent pricing with no hidden fees.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>3. Implementation</h3>
+                        <p>Upon approval, we implement the plan, keeping you informed throughout the process. Our team works diligently to ensure everything proceeds smoothly.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>4. Delivery</h3>
+                        <p>We ensure timely delivery of your vehicle, shipment, or rental car to your specified location. All deliveries are tracked and monitored for quality assurance.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>5. Follow-up</h3>
+                        <p>We follow up to ensure your complete satisfaction and address any additional needs. Your feedback helps us continuously improve our services.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Transparent Pricing</h2>
+            <p class="section-description">At Ran Tranz, we believe in transparent pricing with no hidden fees. Our pricing structure is designed to provide value while ensuring the highest quality of service.</p>
+            <div class="pricing-info">
+                <div class="pricing-card">
+                    <h3>Dealer Services</h3>
+                    <p>Our dealer services fees are based on the type and value of the vehicle. Contact us for a personalized quote.</p>
+                    <a href="contact.html" class="btn btn-outline">Request Quote</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Shipping Services</h3>
+                    <p>Shipping rates vary based on destination, size, weight, and shipping method. We offer competitive rates for both local and international shipping.</p>
+                    <a href="contact.html" class="btn btn-outline">Request Quote</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Car Rentals</h3>
+                    <p>Our rental rates start from $50 per day, with discounts available for weekly and monthly rentals. Contact us for current promotions.</p>
+                    <a href="contact.html" class="btn btn-outline">Request Quote</a>
+                </div>
+            </div>
+            
+            <!-- Quick Quote Estimator -->
+            <div class="quote-estimator">
+                <h3>Quick Quote Estimator</h3>
+                <p>Get an instant estimate for your service needs. Please note that this is just an estimate and final pricing may vary based on specific requirements.</p>
+                <form class="estimator-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-type">Service Type</label>
+                            <select id="service-type" required>
+                                <option value="">Select a Service</option>
+                                <option value="dealer">Dealer Services</option>
+                                <option value="shipping">Shipping Services</option>
+                                <option value="rental">Car Rental</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" min="1" value="1" required>
+                            <small>For dealer services: number of vehicles. For shipping: number of items.</small>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row" id="service-specific-fields">
+                        <div class="form-group" id="duration-field" style="display: none;">
+                            <label for="duration">Rental Duration (Days)</label>
+                            <input type="number" id="duration" min="1" value="1">
+                        </div>
+                        <div class="form-group" id="distance-field" style="display: none;">
+                            <label for="distance">Shipping Distance (Miles)</label>
+                            <input type="number" id="distance" min="0" value="0">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Calculate Estimate</button>
+                </form>
+                <div class="estimate-result">
+                    <!-- Results will appear here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Metrics Section -->
+    <section class="metrics-section">
+        <div class="container">
+            <h2 class="section-title">Our Success Metrics</h2>
+            <p class="section-description">We take pride in our track record of excellence and customer satisfaction.</p>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="metric-value">5000+</div>
+                    <div class="metric-label">Satisfied Clients</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="metric-value">10,000+</div>
+                    <div class="metric-label">Vehicles Procured</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="metric-value">25,000+</div>
+                    <div class="metric-label">Shipments Delivered</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="metric-value">15+</div>
+                    <div class="metric-label">Countries Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Ran Tranz helped me find my dream 2017 Lexus in excellent condition. Their dealer services are unmatched in quality and reliability."</p>
+                        <div class="client-info">
+                            <h4>Carissa Donley</h4>
+                            <p>Chicago, IL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"I was impressed with the timely and problem-free delivery of items I shipped to Ghana. Their international shipping service is exceptional."</p>
+                        <div class="client-info">
+                            <h4>Kwasi Baffour</h4>
+                            <p>New Jersey, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The car rental service from Ran Tranz was seamless from booking to return. The vehicle was in perfect condition and exactly what I needed for my business trip."</p>
+                        <div class="client-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Miami, FL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-description">Real success stories from our clients showcasing our service excellence.</p>
+            <div class="case-study-grid">
+                <div class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="images/Premium Fleet.jpg" alt="Luxury Vehicle Fleet">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Fleet Procurement for Corporate Client</h3>
+                        <p>We helped a multinational corporation source and deliver 25 executive vehicles across 5 states within 30 days.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="images/Global Shipping Slide.png" alt="International Shipping">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Cross-Continental Shipping Solution</h3>
+                        <p>We established a reliable shipping route between Chicago and Accra, reducing transit time by 40% for a major exporter.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="images/Dealer Network Slide.jpg" alt="Dealer Network">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Premium Car Rental Program</h3>
+                        <p>We developed a custom rental program for a luxury hotel chain, providing on-demand premium vehicles for their VIP guests.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Our Services?</h2>
+                <p>Contact us today for a free consultation and quote on your procurement and shipping needs.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ran Tranz</h3>
+                    <p>Specializing in promoting trade through imports and exports with tailored logistics solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="dealer-services.html">Dealer Services</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="car-rentals.html">Car Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Chicago, Illinois, USA</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@rantranz.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ran Tranz. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span>Chat with Us</span>
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/services-interactive.js"></script>
+    <script>
+        // Additional JavaScript for dynamic form fields
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceTypeSelect = document.getElementById('service-type');
+            const durationField = document.getElementById('duration-field');
+            const distanceField = document.getElementById('distance-field');
+            
+            if (serviceTypeSelect) {
+                serviceTypeSelect.addEventListener('change', function() {
+                    const selectedService = this.value;
+                    
+                    // Hide all service-specific fields first
+                    durationField.style.display = 'none';
+                    distanceField.style.display = 'none';
+                    
+                    // Show relevant fields based on service type
+                    switch(selectedService) {
+                        case 'rental':
+                            durationField.style.display = 'block';
+                            break;
+                        case 'shipping':
+                            distanceField.style.display = 'block';
+                            break;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

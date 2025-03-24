@@ -1,0 +1,164 @@
+/* Responsive Styles */
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .services-grid,
+    .indicators-grid,
+    .footer-grid {
+        gap: 20px;
+    }
+    
+    .banner-image {
+        height: 400px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    /* Header & Navigation */
+    header .container {
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .search-container {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .search-container form {
+        width: 100%;
+    }
+    
+    .search-container input {
+        width: 100%;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        order: 2;
+    }
+    
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        order: 4;
+        margin-top: 15px;
+    }
+    
+    .main-menu.active {
+        display: flex;
+    }
+    
+    .main-menu > li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        min-width: auto;
+        margin-top: 10px;
+        margin-left: 15px;
+        display: none;
+    }
+    
+    .main-menu > li:hover .submenu {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Sections */
+    section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    /* Grids */
+    .services-grid,
+    .indicators-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Images */
+    .banner-image {
+        height: 300px;
+    }
+    
+    /* Footer */
+    .footer-col {
+        margin-bottom: 30px;
+    }
+    
+    /* Live Chat Widget */
+    .chat-toggle {
+        padding: 10px 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .banner-image {
+        height: 200px;
+    }
+    
+    .service-card,
+    .indicator-card {
+        padding: 20px;
+    }
+    
+    .testimonial-content {
+        padding: 20px;
+    }
+}

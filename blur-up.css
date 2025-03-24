@@ -1,0 +1,86 @@
+/* Blur-up image loading effect */
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter 0.8s ease-in-out;
+    will-change: filter;
+    transform: translateZ(0); /* Force GPU acceleration */
+}
+
+.blur-up.loaded {
+    filter: blur(0);
+}
+
+/* Low-quality image placeholder styles */
+.lqip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05); /* Slightly larger to avoid edge artifacts */
+}
+
+.lqip.hidden {
+    opacity: 0;
+}
+
+/* Progressive loading effect */
+.progressive-image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Subtle background while loading */
+}
+
+/* Slide-specific image optimizations */
+
+/* Dealer Network specific optimizations */
+.dealer-network-img {
+    object-position: center; /* Focus on the professional interaction */
+    object-fit: cover;
+}
+
+/* Global Shipping specific optimizations */
+.global-shipping-img {
+    object-position: center; /* Highlight the multimodal transport elements */
+    object-fit: cover;
+}
+
+/* Premium fleet specific optimizations */
+.premium-fleet-img {
+    object-position: center; /* Focus on the car's silhouette and LED lights */
+    object-fit: cover;
+}
+
+/* Loading indicator */
+.progressive-image-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    opacity: 0;
+    animation: spin 1s linear infinite;
+    transition: opacity 0.3s ease;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.progressive-image-container.loading::after {
+    opacity: 1;
+}
